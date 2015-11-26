@@ -22,7 +22,7 @@
     <script src="../plugin.js"></script>
 </head>
 <body>
-    <textarea id="editor"></textarea>
+    <textarea id="editor" placeholder="placeholder"></textarea>
 <script>
 (function() {
     var config = {
@@ -31,7 +31,8 @@
         'enableHotkeys': true,
         'title': '',
         'height': 500,
-        'extraPlugins': 'placeholder'
+        'extraPlugins': 'placeholder',
+        'showPlaceholder': true
     };
 
     CKEDITOR.editorConfig(config);
