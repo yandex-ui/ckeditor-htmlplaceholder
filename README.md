@@ -1,1 +1,1 @@
-# ckeditor-placeholder
+# ckeditor-htmlplaceholder

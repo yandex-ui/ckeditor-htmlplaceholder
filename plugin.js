@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    var CLASS_PLACEHOLDER = 'cke_custom_placeholder';
+    var CLASS_PLACEHOLDER = 'cke_htmlplaceholder';
     var CHECK_SHOW_EVENTS = {
         blur: null,
         change: null,
@@ -14,7 +14,7 @@
 
     CKEDITOR.config.showPlaceholder = false;
 
-    CKEDITOR.plugins.add('placeholder', {
+    CKEDITOR.plugins.add('htmlplaceholder', {
         modes: { 'wysiwyg': 1, 'source': 1 },
 
         onLoad: function() {

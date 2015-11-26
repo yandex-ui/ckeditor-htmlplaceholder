@@ -1,5 +1,5 @@
 {
-  "name": "ckeditor-placeholder",
+  "name": "ckeditor-htmlplaceholder",
   "version": "1.0.0",
   "description": "",
   "keywords": [
@@ -16,12 +16,12 @@
     "url": "https://github.com/Katochimoto"
   },
   "bugs": {
-    "url": "https://github.com/yandex-ui/ckeditor-placeholder/issues",
+    "url": "https://github.com/yandex-ui/ckeditor-htmlplaceholder/issues",
     "email": "bufpost@yandex.ru"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yandex-ui/ckeditor-placeholder.git"
+    "url": "git://github.com/yandex-ui/ckeditor-htmlplaceholder.git"
   },
   "devDependencies": {
     "vow": "0.4.10",
