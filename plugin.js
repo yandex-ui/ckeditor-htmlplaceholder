@@ -34,6 +34,15 @@
             for (var eventName in CHECK_SHOW_EVENTS) {
                 editor.on(eventName, editor._placeholder.checkShow, editor._placeholder);
             }
+
+            editor.on('destroy', this._onDestroy);
+        },
+
+        _onDestroy: function() {
+            if (this._placeholder) {
+                this._placeholder.destroy();
+                this._placeholder = undefined;
+            }
         }
     });
 
@@ -48,6 +57,10 @@
         beforeCommandExec: null,
         beforeModeUnload: null,
         destroy: null
+    };
+
+    Placeholder.prototype.destroy = function() {
+        this._checkShowDebounce.cancel();
     };
 
     Placeholder.prototype.checkShow = function() {
@@ -101,7 +114,8 @@
     };
 
     Placeholder.prototype._hasPlaceholder = function() {
-        return this._editor.editable().hasClass(CLASS_PLACEHOLDER);
+        var editable = this._editor.editable();
+        return Boolean(editable && editable.hasClass(CLASS_PLACEHOLDER));
     };
 
 
