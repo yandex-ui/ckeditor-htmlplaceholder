@@ -19,7 +19,7 @@
 
         onLoad: function() {
             CKEDITOR.addCss(
-                '.' + CLASS_PLACEHOLDER + ':before {white-space:nowrap;margin-left:4px;position:absolute;font:15px Arial;color:rgba(0,0,0,.25);content:attr(placeholder);display:block;}'
+                '.' + CLASS_PLACEHOLDER + ':before {pointer-events:none;white-space:nowrap;margin-left:4px;position:absolute;font:15px Arial;color:rgba(0,0,0,.25);content:attr(placeholder);display:block;}'
             );
         },
 
