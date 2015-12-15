@@ -75,12 +75,17 @@
             return;
         }
 
-        var data = this._editor.getData();
+        try {
+            var data = this._editor.getData();
 
-        if (!this._editor.readOnly && isEmpty(data)) {
-            this._show();
+            if (!this._editor.readOnly && isEmpty(data)) {
+                this._show();
 
-        } else {
+            } else {
+                this._hide();
+            }
+
+        } catch (e) {
             this._hide();
         }
     };
