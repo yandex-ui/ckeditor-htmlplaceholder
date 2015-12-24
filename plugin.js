@@ -19,6 +19,11 @@
 
         onLoad: function() {
             CKEDITOR.addCss(
+                'textarea.cke_source::-webkit-input-placeholder {color:#ccc;padding-left:4px;}' +
+                'textarea.cke_source::-moz-placeholder {color:#ccc;padding-left:4px;}' +
+                'textarea.cke_source:-ms-input-placeholder {color:#ccc !important;padding-left:4px;}' +
+                'textarea.cke_source::-ms-input-placeholder {color:#ccc;padding-left:4px;}' +
+                'textarea.cke_source::placeholder {color:#ccc;padding-left:4px;}' +
                 '.' + CLASS_PLACEHOLDER + ':before {pointer-events:none;white-space:nowrap;margin-left:4px;position:absolute;font:15px Arial;color:rgba(0,0,0,.25);content:attr(placeholder);display:block;}'
             );
         },
